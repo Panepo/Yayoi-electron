@@ -1,0 +1,22 @@
+{
+  "name": "yayoi-electron",
+  "version": "1.0.0",
+  "description": "A Electron application of Yayoi",
+  "private": true,
+  "author": "Panepo <panepo@github.io>",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Panepo/Yayoi-electron.git"
+  },
+  "scripts": {
+    "start": "electron .",
+    "buildwin32": "electron-packager . Yayoi --platform=win32 --arch=x64 --out=./build/",
+    "buildUWP": "electron-windows-store --input-directory ./build/Yayoi-win32-x64/  --output-directory ./build/ --package-version 1.0.0.0 --package-name Yayoi"
+  },
+  "devDependencies": {
+    "electron": "^3.0.4",
+    "electron-packager": "^12.2.0",
+    "electron-windows-store": "^2.0.0"
+  }
+}

@@ -59,3 +59,11 @@ typings/
 
 # next.js build output
 .next
+
+build/
+static/
+model/
+service-worker.js
+asset-manifest.json
+manifest.json
+index.html
